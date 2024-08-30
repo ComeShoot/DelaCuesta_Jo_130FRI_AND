@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,31 +8,32 @@
     android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
     tools:context=".MainActivity">
 
+
     <EditText
-        android:id="@+id/editTextNumber1"
+        android:id="@+id/firstNumber"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:hint="Enter first number"
         android:inputType="numberDecimal"
+        android:hint="Enter first number"
         android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="15dp"/>
 
-    <!-- Second Number Input -->
+
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/secondNumber"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="Enter second number"
         android:inputType="numberDecimal"
+        android:hint="Enter second number"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumber"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -39,7 +41,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumber"
         tools:ignore="MissingConstraints">
 
         <Button
@@ -49,30 +51,22 @@
             android:layout_margin="5dp"
             android:text="+ Add" />
 
-        <!-- Subtraction Button -->
+
         <Button
             android:id="@+id/btnSubtract"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="- Subtract" />
-
-        <!-- Multiplication Button -->
-
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:ignore="MissingConstraints">
-
-
-        <!-- Multiplication Button -->
         <Button
             android:id="@+id/btnMultiply"
             android:layout_width="130dp"
@@ -80,7 +74,6 @@
             android:layout_margin="5dp"
             android:text="* Multiply" />
 
-        <!-- Division Button -->
         <Button
             android:id="@+id/btnDivide"
             android:layout_width="130dp"
@@ -89,7 +82,6 @@
             android:text="/ Divide" />
 
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/textView"
@@ -103,20 +95,19 @@
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.386"
+        app:layout_constraintVertical_bias="0.397"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textViewResult"
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.177"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

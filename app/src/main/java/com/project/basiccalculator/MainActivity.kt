@@ -1,5 +1,6 @@
 package com.project.basiccalculator
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -16,17 +17,19 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnMultiply: Button
     lateinit var btnDivide: Button
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        editTextNumber1 = findViewById(R.id.editTextNumber1)
-        editTextNumber2 = findViewById(R.id.editTextNumber2)
-        textViewResult = findViewById(R.id.textViewResult)
+        editTextNumber1 = findViewById(R.id.firstNumber)
+        editTextNumber2 = findViewById(R.id.secondNumber)
+        textViewResult = findViewById(R.id.result)
         btnAdd = findViewById(R.id.btnAdd)
         btnSubtract = findViewById(R.id.btnSubtract)
         btnMultiply = findViewById(R.id.btnMultiply)
         btnDivide = findViewById(R.id.btnDivide)
+
         btnAdd.setOnClickListener {
             calculate('+')
         }
