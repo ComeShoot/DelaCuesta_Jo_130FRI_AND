@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize UI components
         editTextNumber1 = findViewById(R.id.editTextNumber1)
         editTextNumber2 = findViewById(R.id.editTextNumber2)
         textViewResult = findViewById(R.id.textViewResult)
@@ -28,8 +27,6 @@ class MainActivity : AppCompatActivity() {
         btnSubtract = findViewById(R.id.btnSubtract)
         btnMultiply = findViewById(R.id.btnMultiply)
         btnDivide = findViewById(R.id.btnDivide)
-
-        // Set up button click listeners
         btnAdd.setOnClickListener {
             calculate('+')
         }
@@ -59,9 +56,7 @@ class MainActivity : AppCompatActivity() {
                 '/' -> if (num2 != 0.0) num1 / num2 else null
                 else -> null
             }
-
             if (result != null) {
-                // Check if the result is a whole number
                 textViewResult.text = if (result % 1 == 0.0) {
                     result.toInt().toString()
                 } else {
