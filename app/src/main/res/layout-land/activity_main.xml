@@ -43,36 +43,50 @@
 
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="+" />
+            android:text="+ Add" />
 
         <!-- Subtraction Button -->
         <Button
             android:id="@+id/btnSubtract"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="-" />
+            android:text="- Subtract" />
+
+        <!-- Multiplication Button -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
 
         <!-- Multiplication Button -->
         <Button
             android:id="@+id/btnMultiply"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="*" />
+            android:text="* Multiply" />
 
         <!-- Division Button -->
         <Button
             android:id="@+id/btnDivide"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="/" />
+            android:text="/ Divide" />
 
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView"
@@ -86,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.126"
+        app:layout_constraintVertical_bias="0.386"
         tools:ignore="MissingConstraints" />
 
     <TextView
