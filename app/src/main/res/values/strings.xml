@@ -4,4 +4,6 @@
     <string name="Evo">The Mitsubishi Lancer Evolution X, or Evo X, is a high-performance sedan produced from 2007 to 2016. It features a 2.0-liter turbocharged inline-four engine producing up to 291 horsepower, paired with Mitsubishi\'s Super All-Wheel Control (S-AWC) system for exceptional handling. Known for its aggressive styling, advanced technology, and rally heritage, the Evo X is popular among driving enthusiasts for its blend of speed, precision, and practicality.</string>
     <string name="Sup">The Toyota Supra MK4 (A80), produced from 1993 to 2002, is a legendary sports car known for its sleek design and powerful 3.0L twin-turbocharged 2JZ-GTE engine, delivering up to 320 horsepower. Its tunability, rear-wheel-drive layout, and iconic status in car culture, including its role in the "Fast and Furious" films, make it highly revered among enthusiasts.</string>
     <string name="bugs">The Bugatti Chiron is a hypercar with a quad-turbocharged 8.0L W16 engine producing 1,479 horsepower, allowing it to reach 261 mph. Known for its sleek design, luxury, and cutting-edge technology, it\'s one of the most powerful and exclusive cars in the world.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
